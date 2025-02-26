@@ -1,0 +1,40 @@
+#font {
+    font-family: "sloop-script-three", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+#center-page {
+    padding-top: 43vh;
+    z-index: 1;
+    animation-name: FORM;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+#video {
+    size: fit;
+    position: absolute;
+    z-index: -1;
+}
+#text-size {
+    font-size: 10vh;
+}
+a {
+    color: grey;
+    text-decoration: none;
+}
+body {
+    overflow: hidden;
+}
+
+
+
+@keyframes FORM {
+    from {
+        scale: 1;
+    }
+    to {
+        scale: 1.4;
+    }
+}
