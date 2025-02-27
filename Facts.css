@@ -8,13 +8,14 @@
     align-items: center;
   }
   body {
-    background: url(imgs/002-subtle-light-pattern-background-texture.jpg)
+    background: url(imgs/002-subtle-light-pattern-background-texture.jpg);
+    overflow-x: hidden;
   }
 
   .section {
     position: relative;
     color: white;
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   .section img {
@@ -49,6 +50,38 @@
   #hover {
     animation-name: Grow;
   }
-  #hover:hover {
-    
-  }
+
+
+.animate {
+  animation-name: translate;
+  animation-duration: 2s; /* Animation lasts 2 seconds */
+  animation-fill-mode: forwards; /* Keeps final position */
+}
+
+#texas {
+  width: 75%;
+  position: relative;
+  height: 75%;
+}
+
+#placeHolder {
+  width: 75%;
+  height: 75%;
+}
+
+
+.animate {
+  animation-name: translate;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes translate {
+  from { transform: translateX(0); }
+  to { transform: translateX(900px); }
+}
+
+#hover:hover img {
+  opacity: 0.8;
+  box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
