@@ -15,3 +15,11 @@ veto.addEventListener('click', function () {
   veto.classList.add('animate-veto');
   behindVeto.classList.remove('d-none');
 });
+
+//After Presidency Arrow//
+
+let arrow = document.getElementById('arrow2');
+
+arrow.addEventListener('click', function () {
+    arrow.classList.add('Whoosh-Right');
+  });

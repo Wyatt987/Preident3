@@ -138,3 +138,123 @@
   to { transform: translateX(900px); }
 }
 
+/*Flag Section*/
+
+#Left1 {
+  animation-name: left;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes left {
+  from { transform: translateX(-1000px); }
+  to { transform: translateX(0px); }
+}
+#top1 {
+  animation-name: top1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  opacity: 0; 
+}
+@keyframes top1 {
+  from {
+    transform: translateY(-1000px);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+#right1 {
+  animation-name: right1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  opacity: 0; 
+}
+@keyframes right1 {
+  from {
+    transform: translateX(1000px);
+    opacity: 0; }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+#left2 {
+  animation-name: left2;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  opacity: 0; 
+}
+@keyframes left2 {
+  from {
+    transform: translateX(1000px);
+    opacity: 0; }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+#right2 {
+  animation-name: right2;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  opacity: 0; 
+}
+@keyframes right2 {
+  from {
+    transform: translateX(-1000px);
+    opacity: 0; }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+#bottom1 {
+  animation-name: bottom1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+  opacity: 0; 
+}
+@keyframes bottom1 {
+  from {
+    transform: translateY(1000px);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#arrow {
+  animation-name: clickMe;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; 
+}
+
+@keyframes clickMe {
+  0% {
+      transform: scale(1) ; 
+  }
+  50% {
+      transform: scale(1.5); 
+  }
+  100% {
+      transform: scale(1); 
+  }
+}
+
+.Whoosh-Right {
+  animation-name: translate-x;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;  
+}
+
+  @keyframes translate-x {
+    from { transform: translateX(0); }
+    to { transform: translateX(500px); }
+  }
