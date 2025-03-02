@@ -88,10 +88,17 @@
   box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.2); 
 }
 
-
   #Size {
+    max-width: 400px; 
     height: 75%;
     width: 75%;
+  }
+
+  
+  @media (max-width: 768px) { 
+    #Size {
+      max-width: 200px; 
+    }
   }
 /*Style text behind Image*/
 .behind {
